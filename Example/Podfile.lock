@@ -1,0 +1,16 @@
+PODS:
+  - SREventCallBack (0.1.0)
+
+DEPENDENCIES:
+  - SREventCallBack (from `../`)
+
+EXTERNAL SOURCES:
+  SREventCallBack:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SREventCallBack: 288af3e9bb7be7f5fcc9d4b0ed37c93f8fc83592
+
+PODFILE CHECKSUM: 0a33452e381587c249666b90a22272b41e4b7eb2
+
+COCOAPODS: 1.4.0

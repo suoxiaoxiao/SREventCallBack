@@ -7,15 +7,34 @@
 //
 
 #import "SRFirstLayerView.h"
+#import "SRSecondLayerView.h"
+
+
+@interface SRFirstLayerView ()
+
+@property (nonatomic ,strong)SRSecondLayerView *secondLayer;
+
+@end
 
 @implementation SRFirstLayerView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        self.secondLayer = [[SRSecondLayerView alloc] initWithFrame:CGRectMake(20, 20, 150, 150)];
+        self.secondLayer.backgroundColor = [UIColor greenColor];
+        [self addSubview:self.secondLayer];
+        
+    }
+    return self;
 }
-*/
+
+- (void)touchHandlewithEvent:(UIEvent *)event
+{
+    NSLog(@"这是SRFirstLayerView");
+    [super touchHandlewithEvent:event];
+}
 
 @end

@@ -1,0 +1,6 @@
+framework module SREventCallBack {
+  umbrella header "SREventCallBack-umbrella.h"
+
+  export *
+  module * { export * }
+}

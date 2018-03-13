@@ -8,16 +8,36 @@
 
 #import "SRViewController.h"
 
+#import "SRSecondViewController.h"
+
 @interface SRViewController ()
+
+
 
 @end
 
 @implementation SRViewController
+- (IBAction)touch:(id)sender {
+    SRSecondViewController *vc = [SRSecondViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+    
+//    [self.view touchHandlewithEvent:nil];
+    
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+
+
+
+- (void)touchHandlewithEvent:(UIEvent *)event
+{
+    NSLog(@"SRViewController touchHandlewithEvent");
 }
 
 - (void)didReceiveMemoryWarning

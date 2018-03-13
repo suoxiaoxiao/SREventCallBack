@@ -10,12 +10,24 @@
 
 @implementation SRThirdLayerView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didclick)]];
+        
+    }
+    return self;
 }
-*/
+
+- (void)didclick
+{
+    UIEvent *event = [[UIEvent alloc] init];
+    event.eventKey = @"thirdKey";
+    event.eventSource = self;
+    [self touchHandlewithEvent:event];
+}
+
 
 @end

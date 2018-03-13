@@ -7,17 +7,32 @@
 //
 
 #import "SRSecondViewController.h"
+#import "SRFirstLayerView.h"
 
 @interface SRSecondViewController ()
 
+
+@property (nonatomic ,strong)SRFirstLayerView *firstLayer;
 @end
 
 @implementation SRSecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.firstLayer = [[SRFirstLayerView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    self.firstLayer.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:self.firstLayer];
+    
     // Do any additional setup after loading the view.
 }
+- (void)touchHandlewithEvent:(UIEvent *)event
+{
+    NSLog(@"SRSecondViewController 我接收到了");
+    
+    [super touchHandlewithEvent:event];
+}
+
 #pragma mark - 初始化Navi
 - (void)initNavi
 {

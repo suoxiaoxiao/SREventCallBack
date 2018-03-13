@@ -1,0 +1,6 @@
+framework module Pods_SREventCallBack_Example {
+  umbrella header "Pods-SREventCallBack_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

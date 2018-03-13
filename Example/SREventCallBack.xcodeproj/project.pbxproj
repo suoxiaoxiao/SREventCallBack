@@ -24,6 +24,12 @@
 		6ABF24C946CAFF46834B2E67 /* Pods_SREventCallBack_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5343853EBD31AC997CE59AE /* Pods_SREventCallBack_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A814D638205129CA00640CD1 /* SRSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A814D637205129CA00640CD1 /* SRSecondViewController.m */; };
+		A8EC432B2050C8D400319B3C /* SRFirstLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EC432A2050C8D400319B3C /* SRFirstLayerView.m */; };
+		A8EC432E2050C91A00319B3C /* SRSecondLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EC432D2050C91A00319B3C /* SRSecondLayerView.m */; };
+		A8EC43312050C96A00319B3C /* SRThirdLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EC43302050C96A00319B3C /* SRThirdLayerView.m */; };
+		A8EC43342050CC3000319B3C /* UIEvent+SRCallBack.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EC43332050CC3000319B3C /* UIEvent+SRCallBack.m */; };
+		A8EC43372050CD2300319B3C /* NSObject+SREventAction.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EC43362050CD2300319B3C /* NSObject+SREventAction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		057623179D68FB545C75E41F /* Pods_SREventCallBack_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SREventCallBack_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E472F030F8A1A9D1CC77E30 /* SREventCallBack.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SREventCallBack.podspec; path = ../SREventCallBack.podspec; sourceTree = "<group>"; };
+		1E472F030F8A1A9D1CC77E30 /* SREventCallBack.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SREventCallBack.podspec; path = ../SREventCallBack.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		20972F426FC5B4C761E68C0F /* Pods-SREventCallBack_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SREventCallBack_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SREventCallBack_Example/Pods-SREventCallBack_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SREventCallBack_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SREventCallBack_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,10 +68,23 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81C7067946E0D96FF85F141C /* Pods-SREventCallBack_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SREventCallBack_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SREventCallBack_Tests/Pods-SREventCallBack_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A814D636205129CA00640CD1 /* SRSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRSecondViewController.h; sourceTree = "<group>"; };
+		A814D637205129CA00640CD1 /* SRSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRSecondViewController.m; sourceTree = "<group>"; };
+		A8EC43292050C8D400319B3C /* SRFirstLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRFirstLayerView.h; sourceTree = "<group>"; };
+		A8EC432A2050C8D400319B3C /* SRFirstLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRFirstLayerView.m; sourceTree = "<group>"; };
+		A8EC432C2050C91A00319B3C /* SRSecondLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRSecondLayerView.h; sourceTree = "<group>"; };
+		A8EC432D2050C91A00319B3C /* SRSecondLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRSecondLayerView.m; sourceTree = "<group>"; };
+		A8EC432F2050C96A00319B3C /* SRThirdLayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRThirdLayerView.h; sourceTree = "<group>"; };
+		A8EC43302050C96A00319B3C /* SRThirdLayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRThirdLayerView.m; sourceTree = "<group>"; };
+		A8EC43322050CC3000319B3C /* UIEvent+SRCallBack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIEvent+SRCallBack.h"; sourceTree = "<group>"; };
+		A8EC43332050CC3000319B3C /* UIEvent+SRCallBack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIEvent+SRCallBack.m"; sourceTree = "<group>"; };
+		A8EC43352050CD2300319B3C /* NSObject+SREventAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SREventAction.h"; sourceTree = "<group>"; };
+		A8EC43362050CD2300319B3C /* NSObject+SREventAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SREventAction.m"; sourceTree = "<group>"; };
+		A8EC43382050D49900319B3C /* EventActionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventActionProtocol.h; sourceTree = "<group>"; };
 		B0B609327DE883AED88E524C /* Pods-SREventCallBack_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SREventCallBack_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SREventCallBack_Example/Pods-SREventCallBack_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B5343853EBD31AC997CE59AE /* Pods_SREventCallBack_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SREventCallBack_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD22F25568846B9B9FEC358C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D18F4CCDC8E3B870F0B5F8FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CD22F25568846B9B9FEC358C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D18F4CCDC8E3B870F0B5F8FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DC9740ED5D75DC13982EDDB2 /* Pods-SREventCallBack_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SREventCallBack_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SREventCallBack_Tests/Pods-SREventCallBack_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,9 +167,22 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* SRViewController.h */,
 				6003F5A6195388D20070C39A /* SRViewController.m */,
+				A814D636205129CA00640CD1 /* SRSecondViewController.h */,
+				A814D637205129CA00640CD1 /* SRSecondViewController.m */,
+				A8EC43292050C8D400319B3C /* SRFirstLayerView.h */,
+				A8EC432A2050C8D400319B3C /* SRFirstLayerView.m */,
+				A8EC432C2050C91A00319B3C /* SRSecondLayerView.h */,
+				A8EC432D2050C91A00319B3C /* SRSecondLayerView.m */,
+				A8EC432F2050C96A00319B3C /* SRThirdLayerView.h */,
+				A8EC43302050C96A00319B3C /* SRThirdLayerView.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				A8EC43322050CC3000319B3C /* UIEvent+SRCallBack.h */,
+				A8EC43332050CC3000319B3C /* UIEvent+SRCallBack.m */,
+				A8EC43352050CD2300319B3C /* NSObject+SREventAction.h */,
+				A8EC43362050CD2300319B3C /* NSObject+SREventAction.m */,
+				A8EC43382050D49900319B3C /* EventActionProtocol.h */,
 			);
 			name = "Example for SREventCallBack";
 			path = SREventCallBack;
@@ -404,7 +436,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* SRAppDelegate.m in Sources */,
+				A814D638205129CA00640CD1 /* SRSecondViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* SRViewController.m in Sources */,
+				A8EC432B2050C8D400319B3C /* SRFirstLayerView.m in Sources */,
+				A8EC43372050CD2300319B3C /* NSObject+SREventAction.m in Sources */,
+				A8EC43342050CC3000319B3C /* UIEvent+SRCallBack.m in Sources */,
+				A8EC43312050C96A00319B3C /* SRThirdLayerView.m in Sources */,
+				A8EC432E2050C91A00319B3C /* SRSecondLayerView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,9 +574,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SREventCallBack/SREventCallBack-Prefix.pch";
 				INFOPLIST_FILE = "SREventCallBack/SREventCallBack-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -551,9 +591,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SREventCallBack/SREventCallBack-Prefix.pch";
 				INFOPLIST_FILE = "SREventCallBack/SREventCallBack-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
